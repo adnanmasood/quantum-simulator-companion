@@ -1,0 +1,15 @@
+[package]
+name = "qsim-tutorial"
+version = "0.1.0"
+edition = "2024"
+description = "An educational, checked dense statevector simulator"
+
+[dependencies]
+num-complex = "0.4.6"
+rand = "0.9.5"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"

@@ -1,0 +1,30 @@
+# Local environments and Python build/test output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Rust build output; keep Cargo.lock checked in
+target/
+
+# Regenerable artifacts
+qsharp/generated/
+benchmarks/results.json
+benchmarks/branching-results.json
+benchmarks/workload-*.json
+
+# Local configuration and operating-system files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.zip
